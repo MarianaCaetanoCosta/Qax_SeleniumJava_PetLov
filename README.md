@@ -10,9 +10,9 @@ Aplicar práticas de automação Web em um projeto de QA, cobrindo fluxos da apl
 
 - Java
 - JDK 21
-- Selenium WebDriver 4.20.0
+- Selenium WebDriver 4.49.0
 - JUnit 5
-- Solenide
+- Selenide 7.18.2
 - Maven
 
 ## ▶️ Como executar
