@@ -1,25 +1,42 @@
-## 🤘 Sobre
-Curso ministrado por Fernando Papito
+# QA Automação Web — Selenium Java | PetLov
 
-Projeto Petlov para o treinamento de automação de testes com Java e JUnit 5
+Projeto de automação de testes Web desenvolvido com **Selenium WebDriver, Java e JUnit 5**, utilizando a aplicação PetLov.
 
-## 💻 Tecnologias
-- Selenium Webdriver 4.20.0
+## 🎯 Objetivo
+
+Aplicar práticas de automação Web em um projeto de QA, cobrindo fluxos da aplicação e estruturando a execução automatizada dos testes.
+
+## 🧪 Tecnologias
+
+- Java
 - JDK 21
+- Selenium WebDriver 4.20.0
 - JUnit 5
 - Solenide
+- Maven
 
-## 🤖 Como executar
+## ▶️ Como executar
 
-1. Clonar o repositório, e executar o comando:
-```
+Execute os testes com:
+
+```bash
 mvn test
 ```
 
-## Projeto
+## 📸 Evidências
+
+### Cadastro de ponto de doação
 
 ![Cadastro Ponto de Doação](target/imagens/CadastroPontoDeDoacao.jpg)
 
-![Formulario de Cadastro](target/imagens/Cadastro.jpg)
+### Formulário de cadastro
 
-![Cadastro Concluido](target/imagens/CadastroRealizadocomSucesso.jpg)
+![Formulário de Cadastro](target/imagens/Cadastro.jpg)
+
+### Cadastro concluído
+
+![Cadastro Concluído](target/imagens/CadastroRealizadocomSucesso.jpg)
+
+## 📌 Contexto
+
+Projeto desenvolvido durante formação prática em automação de testes com Fernando Papito. O repositório é mantido como projeto independente do portfólio, representando a experiência com automação Web utilizando Selenium e Java.
