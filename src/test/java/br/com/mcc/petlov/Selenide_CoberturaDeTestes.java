@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
-class PontoDoacao{
+class PontoDoacaoCobertura{
 	String nome;
 	String email;
 	String cep;
@@ -16,7 +16,7 @@ class PontoDoacao{
 	String pets;
 
 	//Método construtor
-	public PontoDoacao(String nome, String email, String cep, Integer numero, String complemento, String pets){
+	public PontoDoacaoCobertura(String nome, String email, String cep, Integer numero, String complemento, String pets){
 		this.nome = nome;
         this.email = email;
         this.cep = cep;
@@ -33,7 +33,7 @@ public class Selenide_CoberturaDeTestes {
         $("h1").shouldHave(text("Cadastro de ponto de doação"));
     }
 
-    private void submeterFormulario(PontoDoacao ponto){
+    private void submeterFormulario(PontoDoacaoCobertura ponto){
         $("input[placeholder='Nome do ponto de doação']").setValue(ponto.nome);
         $("input[name='email']").setValue(ponto.email);
         $("input[name=cep]").setValue(ponto.cep);
@@ -49,7 +49,7 @@ public class Selenide_CoberturaDeTestes {
     void caminhoFeliz() {
 
         //Pré-Condição
-        PontoDoacao ponto = new PontoDoacao(
+        PontoDoacaoCobertura ponto = new PontoDoacaoCobertura(
             "Dog Point",
             "dog@point.com.br",
             "04534011",
@@ -74,7 +74,7 @@ public class Selenide_CoberturaDeTestes {
     void emailIncorreto() {
 
         //Pré-Condição
-        PontoDoacao ponto = new PontoDoacao(
+        PontoDoacaoCobertura ponto = new PontoDoacaoCobertura(
             "Lar dos Peludos",
             "atendimento&lardospeludos.com.br",
             "04534011",
