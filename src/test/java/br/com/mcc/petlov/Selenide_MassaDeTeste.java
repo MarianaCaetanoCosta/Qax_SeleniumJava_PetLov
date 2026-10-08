@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
-class PontoDoacao{
+class PontoDoacaoMassa{
 	String nome;
 	String email;
 	String cep;
@@ -16,7 +16,7 @@ class PontoDoacao{
 	String pets;
 
 	//Método construtor
-	public PontoDoacao(String nome, String email, String cep, Integer numero, String complemento, String pets){
+	public PontoDoacaoMassa(String nome, String email, String cep, Integer numero, String complemento, String pets){
 		this.nome = nome;
         this.email = email;
         this.cep = cep;
@@ -32,7 +32,7 @@ public class Selenide_MassaDeTeste {
     void cadastroTest() {
 
         //Pré-Condição
-        PontoDoacao ponto = new PontoDoacao(
+        PontoDoacaoMassa ponto = new PontoDoacaoMassa(
             "Dog Point",
             "dog@point.com.br",
             "04534011",
